@@ -7,34 +7,38 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginBottom="380dp"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/placeholder" />
+        tools:text="25:00" />
 
     <ImageButton
         android:id="@+id/pauseButton"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/pause_button_color"
         android:src="@drawable/pause_24"
-        app:layout_constraintEnd_toEndOf="@+id/playButton"
-        app:layout_constraintStart_toStartOf="@+id/playButton"
-        app:layout_constraintTop_toTopOf="@+id/playButton" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/stopButton"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/stop_button_color"
         android:src="@drawable/stop_24"
-        app:layout_constraintEnd_toEndOf="@+id/playButton"
-        app:layout_constraintStart_toStartOf="@+id/pauseButton"
-        app:layout_constraintTop_toTopOf="@+id/playButton" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/playButton"
